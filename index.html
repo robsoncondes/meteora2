@@ -16,6 +16,10 @@
     <header class="cabecalho">
         <nav>
             <img src="/src/img/Desktop/Logo desktop.png" alt="logo da loja">
+                <input id="menu-toggle" type="checkbox" />
+                <label for="" class="menu-button-container" for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
             <ul class="opcoes">
                 <li class="opcoes_item">
                     <a href="#">Home</a>
@@ -46,6 +50,7 @@
                 <div class="swiper-slide" data-hash="slide 1">
                     <div class="banner">
                         <img src="./src/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="banner1">
+                        <source srcset="./src/img/Mobile/Banner carousel 1 _ 375.png" media="(max-width: 375px)">
                     </div>
                 </div>
 
@@ -212,27 +217,26 @@
         <h2>
             Conheça todas as nossas facilidades
         </h2>
-        
+
         <div class="social-media-container">
-            <img src="./src/img/Desktop/Ícones/x-diamond (2).png">
-                <span class="social-media-subtitle"> PAGUE PELO PIX </span>
-                    <p class="social-media-comentary">Ganhe 5% OFF em </p>
-                        <p class="social-media-comentary">pagamentos via PIX</p>
-                    
-            <img src="./src/img/Desktop/Ícones/arrow-repeat (2).png">
-                <h4 class="social-media-subtitle">TROCA GRÁTIS</h4>
-                    <p class="social-media-comentary">
-                        Fique livre para trocar em até
-                        30 dias.
-                    </p>
+            <article class="social-media-item">
+                <img src="./src/img/Desktop/Ícones/x-diamond (2).png" alt="Ícone de pagamento via PIX">
+                <h3 class="social-media-subtitle">PAGUE PELO PIX</h3>
+                <p class="social-media-comentary">Ganhe 5% OFF em pagamentos via PIX</p>
+            </article>
+
+            <article class="social-media-item">
+                <img src="./src/img/Desktop/Ícones/arrow-repeat (2).png" alt="Ícone de troca grátis">
+                <h3 class="social-media-subtitle">TROCA GRÁTIS</h3>
+                <p class="social-media-comentary">Fique livre para trocar em até 30 dias.</p>
+            </article>
 
 
-            <img src="./src/img/Desktop/Ícones/flower1 (3).png">
-                <h4 class="social-media-subtitle">SUSTENTABILIDADE</h4>
-                    <p class="social-media-comentary">
-                        Moda responsável, que respeita
-                        o meio ambiente.
-                    </p>
+            <article class="social-media-item">
+                <img src="./src/img/Desktop/Ícones/flower1 (3).png" alt="Ícone de sustentabilidade">
+                <h3 class="social-media-subtitle">SUSTENTABILIDADE</h3>
+                <p class="social-media-comentary">Moda responsável, que respeita o meio ambiente.</p>
+            </article>
 
 
         </div>
