@@ -53,6 +53,7 @@
     width: 102px;
     height: 37px;
     border: 1px solid #9353FF;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

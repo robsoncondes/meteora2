@@ -16,6 +16,10 @@
     <header class="cabecalho">
         <nav>
             <img src="/src/img/Desktop/Logo desktop.png" alt="logo da loja">
+                <input id="menu-toggle" type="checkbox" />
+                <label for="" class="menu-button-container" for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
             <ul class="opcoes">
                 <li class="opcoes_item">
                     <a href="#">Home</a>
@@ -46,6 +50,7 @@
                 <div class="swiper-slide" data-hash="slide 1">
                     <div class="banner">
                         <img src="./src/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="banner1">
+                        <source srcset="./src/img/Mobile/Banner carousel 1 _ 375.png" media="(max-width: 375px)">
                     </div>
                 </div>
 
@@ -145,7 +150,7 @@
         <div class="products">
             <img src="./src/img/Desktop/Imagens Cards/Camiseta.png" alt="">
             <h5>Camiseta Conforto</h5>
-            <p>Multicores e tamanhos. Tecido de algodão 100%, 
+            <p>Multicores e tamanhos. Tecido de algodão 100%,
                 fresquinho para o verão. Modelagem unissex.
             </p>
             <span>R$ 70,00</span>
@@ -214,26 +219,26 @@
         </h2>
 
         <div class="social-media-container">
-        
-            <img src="./src/img/Desktop/Ícones/x-diamond (2).png" alt="">
-            <div class="description">
-                <h4>PAGUE PELO PIX</h4>
-                <p>Ganhe 5% OFF em </p>
-                    <p>pagamentos via PIX</p>
-            </div>
+            <article class="social-media-item">
+                <img src="./src/img/Desktop/Ícones/x-diamond (2).png" alt="Ícone de pagamento via PIX">
+                <h3 class="social-media-subtitle">PAGUE PELO PIX</h3>
+                <p class="social-media-comentary">Ganhe 5% OFF em pagamentos via PIX</p>
+            </article>
 
-            <img src="./src/img/Desktop/Ícones/arrow-repeat (2).png" alt="">
-            <div class="description">
-                <h4>TROCA GRÁTIS</h4>
-                <p>Fique livre para trocar em até</p>
-                    <p> 30 dias.</p>
-            </div>
-            <img src="./src/img/Desktop/Ícones/flower1 (3).png" alt="">
-            <div class="description">
-                <h4>SUSTENTABILIDADE</h4>
-                <p>Moda responsável, que respeita</p>
-                    <p> o meio ambiente.</p>
-            </div>
+            <article class="social-media-item">
+                <img src="./src/img/Desktop/Ícones/arrow-repeat (2).png" alt="Ícone de troca grátis">
+                <h3 class="social-media-subtitle">TROCA GRÁTIS</h3>
+                <p class="social-media-comentary">Fique livre para trocar em até 30 dias.</p>
+            </article>
+
+
+            <article class="social-media-item">
+                <img src="./src/img/Desktop/Ícones/flower1 (3).png" alt="Ícone de sustentabilidade">
+                <h3 class="social-media-subtitle">SUSTENTABILIDADE</h3>
+                <p class="social-media-comentary">Moda responsável, que respeita o meio ambiente.</p>
+            </article>
+
+
         </div>
     </section>
 
@@ -251,28 +256,25 @@
         </div>
     </section>
 
-        <dialog id="modal-1">
-                    
-                        <div class="modal-header">
-                            <img src="./src/img/Desktop/Ícones/check-circle.svg"class="modal-check">
-                            <h2 class="modal-title">
-                                    E-mail cadastrado com sucesso!
-                                </h2>
+    <dialog id="modal-1">
 
-                                <button class="close-modal" 
-                                    data-modal="modal-1" 
-                                        type="button"
-                                >
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                        </div>
-                        <div class="modal-paragraph">
-                            <p class="modal-subtitle">
-                                Em breve você receberá novidades exclusivas da Meteora.
-                            </p>
-                        </div>
-                    
-                </dialog>
+        <div class="modal-header">
+            <img src="./src/img/Desktop/Ícones/check-circle.svg" class="modal-check">
+            <h2 class="modal-title">
+                E-mail cadastrado com sucesso!
+            </h2>
+
+            <button class="close-modal" data-modal="modal-1" type="button">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="modal-paragraph">
+            <p class="modal-subtitle">
+                Em breve você receberá novidades exclusivas da Meteora.
+            </p>
+        </div>
+
+    </dialog>
 
     <footer class="footer">
         <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>

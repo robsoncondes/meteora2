@@ -4,3 +4,9 @@
         height: 415px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .banner  {
+        display: block;
+    }
+}
