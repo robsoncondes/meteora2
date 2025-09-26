@@ -62,10 +62,14 @@
     }
 
     .produtcs-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-    }
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+    padding: 0px 165px 0px 165px;  /* ← esse padding está estourando a tela no mobile */
+}
+
 
     .products h5 {
         margin-bottom: 13px;
@@ -77,6 +81,19 @@
 
     .products img {
         width: 330px;
+        height: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .produtcs-container {
+        grid-template-columns: 1fr; /* só uma coluna no celular */
+        padding: 0 16px; /* espaço menor nas laterais */
+        gap: 20px;
+    }
+
+    .products img {
+        width: 100%; /* garante que as imagens não estourem */
         height: auto;
     }
 }

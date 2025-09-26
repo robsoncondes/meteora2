@@ -57,5 +57,14 @@
         width: 209px;
         height: auto;
     }
+}
+
+@media (max-width: 420px) {
+    #category {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 0px 27px 0px 27px;
+        
+    }
 
 }

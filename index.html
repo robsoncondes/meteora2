@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,7 +15,8 @@
 <body>
     <header class="cabecalho">
         <nav>
-            <img src="/src/img/Desktop/Logo desktop.png" alt="logo da loja">
+            <img src="/src/img/Desktop/Logo desktop.png" alt="logo da loja" class="logo-desktop">
+            <img src="src/img/Mobile/Logo mobile.png" alt="" class="mobile-375">
                 <input id="menu-toggle" type="checkbox" />
                 <label for="" class="menu-button-container" for="menu-toggle">
                     <div class="menu-button"></div>
@@ -37,12 +37,40 @@
                     <a href="#">Promoções</a>
                 </li>
             </ul>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" class="menu-btn" >&#9776;</button>
+            </div>
+
         </nav>
 
+        <div class="mobile-menu">
+            <button class="close-btn">&times;</button>
+            <ul class="opcoes">
+                <li class="opcoes_item">
+                    <a href="#">Home</a>
+                </li>
+
+                <li class="opcoes_item">
+                    <a href="#">Nossa lojas</a>
+                </li>
+
+                <li class="opcoes_item">
+                    <a href="#">Novidades</a>
+                </li>
+                <li class="opcoes_item">
+                    <a href="#">Promoções</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="mobile-container">
         <input type="search" id="search" name="search" placeholder="Digite o produto">
         <button class="buscar-button">
             Buscar
         </button>
+        </div>
     </header>
 
     <section id="slider">
@@ -50,20 +78,22 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide" data-hash="slide 1">
                     <div class="banner">
-                        <img src="./src/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="banner1">
-                        <source srcset="./src/img/Mobile/Banner carousel 1 _ 375.png" media="(max-width: 375px)">
+                        <img src="./src/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="" class="banner-img">
+                        <img src="./src/img/Mobile/Banner carousel 1 _ 375.png" alt="" class="img-375px">
                     </div>
                 </div>
 
                 <div class="swiper-slide" data-hash="slide 2">
                     <div class="banner">
-                        <img src="./src/img/Desktop/Banner carousel 2 _ 1440 (1).png" alt="banner2">
+                        <img src="./src/img/Desktop/Banner carousel 2 _ 1440 (1).png" alt="banner2" class="banner-img">
+                        <img src="./src/img/Mobile/Banner carousel 2 _ 375.png" class="img-375px">
                     </div>
                 </div>
 
                 <div class="swiper-slide" data-hash="slide 3">
                     <div class="banner">
-                        <img src="./src/img/Desktop/Banner carousel 3 _ 1440 (1).png" alt="banner3">
+                        <img src="./src/img/Desktop/Banner carousel 3 _ 1440 (1).png" alt="banner3" class="banner-img">
+                        <img src="./src/img/Mobile/Banner carousel 3 _ 375.png" alt="" class="img-375px">
                     </div>
                 </div>
 
@@ -282,293 +312,5 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./src/javascript/script.js"></script>
-
-=======
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Loja Meteora</title>
-</head>
-
-<body>
-    <header class="cabecalho">
-        <nav>
-            <img src="/src/img/Desktop/Logo desktop.png" alt="logo da loja">
-                <input id="menu-toggle" type="checkbox" />
-                <label for="" class="menu-button-container" for="menu-toggle">
-                    <div class="menu-button"></div>
-                </label>
-            <ul class="opcoes">
-                <li class="opcoes_item">
-                    <a href="#">Home</a>
-                </li>
-
-                <li class="opcoes_item">
-                    <a href="#">Nossa lojas</a>
-                </li>
-
-                <li class="opcoes_item">
-                    <a href="#">Novidades</a>
-                </li>
-                <li class="opcoes_item">
-                    <a href="#">Promoções</a>
-                </li>
-            </ul>
-        </nav>
-
-        <input type="search" id="search" name="search" placeholder="Digite o produto">
-        <button class="buscar-button">
-            Buscar
-        </button>
-    </header>
-
-    <section id="slider">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-hash="slide 1">
-                    <div class="banner">
-                        <img src="./src/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="banner1">
-                        <source srcset="./src/img/Mobile/Banner carousel 1 _ 375.png" media="(max-width: 375px)">
-                    </div>
-                </div>
-
-                <div class="swiper-slide" data-hash="slide 2">
-                    <div class="banner">
-                        <img src="./src/img/Desktop/Banner carousel 2 _ 1440 (1).png" alt="banner2">
-                    </div>
-                </div>
-
-                <div class="swiper-slide" data-hash="slide 3">
-                    <div class="banner">
-                        <img src="./src/img/Desktop/Banner carousel 3 _ 1440 (1).png" alt="banner3">
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="swiper-pagination"></div>
-
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-
-            <div class="swiper-scrollbar"></div>
-        </div>
-
-
-    </section>
-
-
-    <h1 class="category-title">
-        Busque por categoria:
-    </h1>
-    <section id="category">
-
-        <div class="category-images">
-            <a href="#">
-                <img src="./src/img/Desktop/Categorias/Categoria calça.png" alt="">
-                <p class="category-subtitle">
-                    Camisetas
-                </p>
-            </a>
-        </div>
-
-        <div class="category-images">
-            <a href="#">
-                <img src="./src/img/Desktop/Categorias/Categoria Bolsa.png" alt="">
-                <p class="category-subtitle">
-                    Bolsas
-                </p>
-            </a>
-        </div>
-
-        <div class="category-images">
-            <a href="#">
-                <img src="./src/img/Desktop/Categorias/Categoria Calçados.png" alt="">
-                <p class="category-subtitle">
-                    Calçados
-                </p>
-            </a>
-        </div>
-
-        <div class="category-images">
-            <a href="#">
-                <img src="./src/img/Desktop/Categorias/Categoria calça.png" alt="">
-                <p class="category-subtitle">
-                    Calças
-                </p>
-            </a>
-        </div>
-
-        <div class="category-images">
-            <a href="#">
-                <img src="./src/img/Desktop/Categorias/Categoria casacos.png" alt="">
-                <p class="category-subtitle">
-                    Casacos
-                </p>
-            </a>
-        </div>
-
-        <div class="category-images">
-            <a href="#">
-                <img src="./src/img/Desktop/Categorias/Categoria óculos.png" alt="">
-                <p class="category-subtitle">
-                    Òculos
-                </p>
-            </a>
-        </div>
-    </section>
-
-    <h1 class="products-tilte">
-        Produtos que estão bombando!
-    </h1>
-
-    <section class="produtcs-container">
-        <div class="products">
-            <img src="./src/img/Desktop/Imagens Cards/Camiseta.png" alt="">
-            <h5>Camiseta Conforto</h5>
-            <p>Multicores e tamanhos. Tecido de algodão 100%,
-                fresquinho para o verão. Modelagem unissex.
-            </p>
-            <span>R$ 70,00</span>
-            <button class="btn">Ver mais</button>
-        </div>
-
-        <div class="products">
-            <img src="./src/img/Desktop/Imagens Cards/Calça.png" alt="">
-            <h5>Calça Alfaiataria</h5>
-            <p>
-                Modelo Wide Leg alfaiataria em linho. Uma peça
-                pra vida toda!
-            </p>
-            <span>R$ 180,00</span>
-            <button class="btn">Ver mais</button>
-        </div>
-
-        <div class="products">
-            <img src="./src/img/Desktop/Imagens Cards/Tenis.png" alt="">
-            <h5>Tênis Chunky</h5>
-            <p>
-                Snicker casual com solado mais alto e modelagem
-                robusta. Modelo unissex.
-            </p>
-            <span>R$ 250,00</span>
-            <button class="btn">Ver mais</button>
-        </div>
-
-        <div class="products">
-            <img src="./src/img/Desktop/Imagens Cards/Jaqueta.png" alt="">
-            <h5>Jaqueta Jeans</h5>
-            <p>
-                Modelo unissex oversized com gola de camurça.
-                Atemporal e autêntica!
-            </p>
-            <span>R$ 150,00</span>
-            <button class="btn">Ver mais</button>
-        </div>
-
-        <div class="products">
-            <img src="./src/img/Desktop/Imagens Cards/óculos.png" alt="">
-            <h5>Óculos Redondo</h5>
-            <p>
-                Armação metálica em grafite com lentes
-                arredondadas. Sem erro!
-            </p>
-            <span>R$ 120,00</span>
-            <button class="btn">Ver mais</button>
-        </div>
-
-        <div class="products">
-            <img src="./src/img/Desktop/Imagens Cards/Bolsa.png" alt="">
-            <h5>Bolsa coringa</h5>
-            <p>
-                Bolsa camel em couro sintético de alta duração.
-                Ideal para acompanhar você por uma vida!
-            </p>
-            <span>R$ 120,00</span>
-            <button class="btn">Ver mais</button>
-        </div>
-    </section>
-
-    <section id="social_media">
-        <h2>
-            Conheça todas as nossas facilidades
-        </h2>
-
-        <div class="social-media-container">
-            <article class="social-media-item">
-                <img src="./src/img/Desktop/Ícones/x-diamond (2).png" alt="Ícone de pagamento via PIX">
-                <h3 class="social-media-subtitle">PAGUE PELO PIX</h3>
-                <p class="social-media-comentary">Ganhe 5% OFF em pagamentos via PIX</p>
-            </article>
-
-            <article class="social-media-item">
-                <img src="./src/img/Desktop/Ícones/arrow-repeat (2).png" alt="Ícone de troca grátis">
-                <h3 class="social-media-subtitle">TROCA GRÁTIS</h3>
-                <p class="social-media-comentary">Fique livre para trocar em até 30 dias.</p>
-            </article>
-
-
-            <article class="social-media-item">
-                <img src="./src/img/Desktop/Ícones/flower1 (3).png" alt="Ícone de sustentabilidade">
-                <h3 class="social-media-subtitle">SUSTENTABILIDADE</h3>
-                <p class="social-media-comentary">Moda responsável, que respeita o meio ambiente.</p>
-            </article>
-
-
-        </div>
-    </section>
-
-    <section id="newsletter">
-        <div class="newsletter-content">
-            <h3 class="newsletter-title">
-                Quer receber nossas novidades, promoções exclusivas <br> e 10% OFF na primeira compra?
-                <strong>Cadastre-se!</strong>
-            </h3>
-
-            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-            <button class="open-modal" data-modal="modal-1">
-                Enviar
-            </button>
-        </div>
-    </section>
-
-    <dialog id="modal-1">
-
-        <div class="modal-header">
-            <img src="./src/img/Desktop/Ícones/check-circle.svg" class="modal-check">
-            <h2 class="modal-title">
-                E-mail cadastrado com sucesso!
-            </h2>
-
-            <button class="close-modal" data-modal="modal-1" type="button">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-        <div class="modal-paragraph">
-            <p class="modal-subtitle">
-                Em breve você receberá novidades exclusivas da Meteora.
-            </p>
-        </div>
-
-    </dialog>
-
-    <footer class="footer">
-        <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
-    </footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./src/javascript/script.js"></script>
-
->>>>>>> 3a04586279f578d53987a0012a5223e4218145b0
+<script src="src/javascript/script.js"></script>
 </html>

@@ -1,3 +1,8 @@
+.img-375px {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
     .banner {
         width: 100%;
@@ -5,8 +10,14 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-    .banner  {
-        display: block;
+@media (max-width: 420px) {
+    .banner-img {
+        display: none;
     }
+
+    .img-375px {
+        display: block;
+        margin-top: 8rem;
+    }
+
 }
